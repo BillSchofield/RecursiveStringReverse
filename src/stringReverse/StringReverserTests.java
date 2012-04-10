@@ -27,4 +27,10 @@ public class StringReverserTests {
 		String originalString = "abc";
 		assertThat(reverser.reverse(originalString), is("cba"));
 	}
+
+	@Test
+	public void shouldReverseStringWithFourCharacters(){
+		String originalString = "abcd";
+		assertThat(reverser.reverse(originalString), is("dcba"));
+	}
 }
