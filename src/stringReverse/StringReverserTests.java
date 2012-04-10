@@ -15,4 +15,10 @@ public class StringReverserTests {
 		String originalString = "a";
 		assertThat(reverser.reverse(originalString), is(originalString));
 	}
+	
+	@Test
+	public void shouldSwapTwoCharacters(){
+		String originalString = "ab";
+		assertThat(reverser.reverse(originalString), is("ba"));
+	}
 }
