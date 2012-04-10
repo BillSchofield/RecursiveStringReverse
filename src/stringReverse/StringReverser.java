@@ -10,7 +10,8 @@ public class StringReverser {
 		
 		String firstCharacter = "" + string.charAt(0);
 		String lastCharacter = "" + string.charAt(length - 1);
-		return lastCharacter + firstCharacter;
+		String middleCharacters = string.substring(1, length - 1);
+		return lastCharacter + middleCharacters + firstCharacter;
 	}
 
 }

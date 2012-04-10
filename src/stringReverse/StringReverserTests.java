@@ -21,4 +21,10 @@ public class StringReverserTests {
 		String originalString = "ab";
 		assertThat(reverser.reverse(originalString), is("ba"));
 	}
+
+	@Test
+	public void shouldReverseStringWithThreeCharacters(){
+		String originalString = "abc";
+		assertThat(reverser.reverse(originalString), is("cba"));
+	}
 }
